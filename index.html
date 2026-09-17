@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN-API Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+    <section class="left-panel">
+        <div class="credentials">
+            <input id="idInstance" type="text" placeholder="idInstance" autocomplete="off">
+            <input id="apiTokenInstance" type="password" placeholder="ApiTokenInstance" autocomplete="off">
+        </div>
+
+        <div class="method-group">
+            <button type="button" id="getSettingsBtn">getSettings</button>
+            <button type="button" id="getStateInstanceBtn">getStateInstance</button>
+        </div>
+
+        <div class="method-group message-group">
+            <input id="messagePhone" type="text" placeholder="77777724567" inputmode="numeric">
+            <textarea id="messageText" placeholder="Hello World!"></textarea>
+            <button type="button" id="sendMessageBtn">sendMessage</button>
+        </div>
+
+        <div class="method-group file-group">
+            <input id="filePhone" type="text" placeholder="77777724567" inputmode="numeric">
+            <input id="fileUrl" type="url" placeholder="https://my.site.com/img/horse.png">
+            <input id="fileName" type="text" placeholder="horse.png">
+            <button type="button" id="sendFileBtn">sendFileByUrl</button>
+        </div>
+    </section>
+
+    <section class="right-panel">
+        <label for="response">Ответ:</label>
+        <textarea id="response" readonly spellcheck="false"></textarea>
+    </section>
+</main>
+
+<footer>GREEN API © 2025</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
